@@ -30,13 +30,22 @@ $navbar-default-bg: #1c3660;
 }
 
 
-.jumbotron h1, h2 {
+.jumbotron h1, {
     color: #fff;
     text-align: center;
     margin-bottom: 30px;
     letter-spacing: -1px;
     font-weight: bold;
 }
+
+.jumbotron h2, {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
 
 .btn-xlarge {
     background-color: #1c3660;
@@ -46,3 +55,10 @@ $navbar-default-bg: #1c3660;
     color: #fff;
     text-decoration: none;
 }
+
+
+footer {
+    margin-top: 45px;
+    padding-top: 5px;
+    border-top: 1px;
+ }
