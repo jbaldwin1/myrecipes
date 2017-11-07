@@ -23,6 +23,27 @@ class RecipesController < ApplicationController
         end
     end 
     
+    def edit
+        @recipe = Recipe.find(params[:id])
+    end
+    
+    def update
+        @recipe = Recipe.find(params[:id])
+        if @recipe.update(recipe_params)
+            # handle this
+            flash[:success] = "Recipe was updated succesfully!"
+            redirect_to recipe_path(@recipe)
+        else
+            render 'edit'
+        end
+    end
+    
+    
+    def destroy
+        Recipe.find(params[:id]).destroy
+        flash[:success] = "Recipe deleted succesfully"
+        redirect_to recipes_path
+    end
     
     
     
