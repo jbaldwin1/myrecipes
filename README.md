@@ -1,5 +1,9 @@
 # README
 
+Ruby Version - ruby 2.3.4p301 (2017-03-30 revision 58214)
+
+Rails Version - Rails 5.0.6
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
