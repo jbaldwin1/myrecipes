@@ -20,8 +20,8 @@ class ChefsSignupTest < ActionDispatch::IntegrationTest
   
   test "accept valid signup" do
     get signup_path
-    assert_difference "Chef.count",1 do
-      post chefs_path,  params: { chef: { chefname: "john ", email: "john@email.com ", password: "password",
+    assert_difference "Chef.count", 1 do
+      post chefs_path,  params: { chef: { chefname: "john", email: "john@email.com", password: "password",
                                           password_confirmation: "password" } }
     end
     follow_redirect!
