@@ -60,7 +60,13 @@ $navbar-default-bg: #1c3660;
 footer {
     margin-top: 45px;
     padding-top: 5px;
-    border-top: 1px;
+    border-top: 1px solid #eaeaea;
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+ 
+ footer a {
+     color: #555;
  }
  
 
@@ -96,4 +102,8 @@ footer {
     color: #1c3660;
     font-weight: bold;
     font-size: 1.29em;
+}
+
+.input_checkbox {
+    width: auto !important;
 }
